@@ -54,7 +54,7 @@ function game(){
     let roundResult = '';
    
     for (let i = 0; i < 5; i++){
-       roundResult = playRound(computerPlay(),playerPlay())
+       roundResult = playRound(playerPlay(),computerPlay())
        if (roundResult.includes("WIN")){
            playerScore += 1;
            console.log(roundResult + " Your score: "+ playerScore + " Computer score: "+ computerScore);
