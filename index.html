@@ -1,12 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+
 <head>
-  <meta charset="UTF-8">
-  <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS_test</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
+
+<script defer src="main.js"></script>
 <body>
-  <button> Play!</button>
-  <script src="myScript.js"></script>
   
+  <h1>Rock, Paper, Scissors</h1>
+  <div id="startBtn">
+    <button id="playGame">Play Game</button>
+  </div>
+  
+  
+  <div id="content"> 
+    <h3>
+      Player <span id="p-score">0</span> - <span id="c-score">0</span> Computer
+    </h3>
+
+    
+    <div id="pSelection">
+      Win 5 rounds
+    </div>
+  
+    <div id="replay">
+    <div class="movesDisplay">
+      <div class="move">
+        <img id="p-move" src="./assets/Rock.svg">
+        <div id="caption">Player</div>
+      </div>
+
+      <div class="separator">
+        v/s
+      </div>
+
+      <div class="move">
+        <img id="c-move" src="./assets/Rock.svg">
+        <div id="caption">Computer</div>
+      </div>
+    </div>
+
+    <div id="playerButtons">
+      <button class="options" type="button" value="Rock"><img src="./assets/Rock.svg" alt="Rock"></button>
+      <button class="options" type="button" value="Paper"><img src="./assets/Paper.svg" alt="Paper"></button>
+      <button class="options" type="button" value="Scissors"><img src="./assets/Scissors.svg" alt="Scissors"></button>
+    </div>
+    </div>
+
+    <div id="replayButton">
+      <button id="replayGame">Play Again?</button>
+    </div>
+
+    <!--div id="scoreBoard">
+      <span>player score</span>
+      <span>computer score</span>
+    </div-->
+  </div>
+  
+
+    
 </body>
 </html>
